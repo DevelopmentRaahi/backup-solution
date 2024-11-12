@@ -30,16 +30,18 @@ ul{
 }
 
 #header{
-    background-color:var(--nav-bg-color);    
+    /* background-color:var(--nav-color);     */
     position: relative;   
 }
- 
+.pre-nav{
+    transition: all ease 0.3s;
+} 
 .pre-nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 5px 10px 5px 0;
-    width: 80%;
+    width: 80%;    
     /* background-color: rgb(247, 190, 190); */
 }
 .pre-nav ul li{    
@@ -51,13 +53,14 @@ ul{
     cursor: pointer;
 }
 .pre-nav ul li a{
+    /* color: #fff; */
     transition: all ease 0.3s;
 }
 .pre-nav ul li:hover a{
     color: var(--nav-hover-color);
 }
 nav{
-    background-color: var(--nav-bg-color);
+    /* background-color: var(--nav-color); */
     position: sticky;
     top: 0;
     left: 0;   
@@ -70,6 +73,11 @@ nav{
     justify-content: center;  
     margin : 0 auto; 
     padding: 0 15vw; 
+    transition: all ease 0.3s;
+}
+
+.header:hover .pre-nav, .header:hover nav{
+    background-color: #ebc1c180;
 }
 nav .logo img{
     width: 150px;
