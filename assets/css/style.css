@@ -7,6 +7,16 @@ body, html{
     height: 100%;
     width: 100%;
 }
+@font-face {
+    font-family: "Space Grotesk";
+    src: url('../fonts/668e9e62338ae31dcfe712bd_SpaceGrotesk-Regular.ttf') format('truetype');
+    src: url('../fonts/668e9e6272951397572c8c34_SpaceGrotesk-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: "DM Sans";
+    src: url('../fonts/652d7141fcc43a406322047f_DMSans-Regular.ttf') format('truetype');
+    src: url('../fonts/652d71790f0d072b7e7416f0_DMSans-Medium.ttf') format('truetype');
+}
 
 body{    
     font-family: "DM Sans",'Space Grotesk',Arial, Helvetica, sans-serif;
@@ -14,8 +24,8 @@ body{
 :root{
     --nav-font: 'Space Grotesk';
     --default-font: 'DM Sans';
-    --nav-color: #4c4c6e;
-    --nav-hover-color:#000033;
+    --nav-color: #5a5a94e1;
+    --nav-hover-color:#000033bd;
     --nav-bg-color:#FAF9F8;
     --heading-color: #000033;
     --paragraph-color: #4c4c6e;
@@ -41,7 +51,7 @@ ul{
     justify-content: flex-end;
     align-items: center;
     padding: 5px 10px 5px 0;
-    width: 80%;    
+    width: 90%;
     /* background-color: rgb(247, 190, 190); */
 }
 .pre-nav ul li{    
@@ -72,12 +82,7 @@ nav{
     gap: 20px;
     justify-content: center;  
     margin : 0 auto; 
-    padding: 0 15vw; 
-    transition: all ease 0.3s;
-}
-
-.header:hover .pre-nav, .header:hover nav{
-    background-color: #ebc1c180;
+    padding: 0 4vw 0 15vw; 
 }
 nav .logo img{
     width: 150px;
@@ -193,6 +198,9 @@ nav .menu > ul{
     transition: all ease 0.3s;
 }
 .sub-menu-item i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     background-color:#a9a9a921;
     color: var(--nav-color);
